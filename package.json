@@ -1,7 +1,7 @@
 {
   "name": "strip-tags",
   "description": "Strip specific tags from a string of HTML",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/strip-tags",
   "author": {
     "name": "Jon Schlinkert",
