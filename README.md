@@ -19,6 +19,9 @@ stripTags(html, 'link');
 
 stripTags(html, ['link', 'script']);
 //=> '<head> </head>'
+
+stripTags(html, 'link,script');
+//=> '<head> </head>'
 ```
 
 ## Run tests
