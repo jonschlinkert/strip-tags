@@ -22,5 +22,5 @@ it('should remove the given tags', function () {
   assert.equal(stripTags('<a></a><b></b><c></c>', ['b']), '<a></a><c></c>');
   assert.equal(stripTags('<a></a><b></b><c></c>', ['b', 'c']), '<a></a>');
   assert.equal(stripTags('<a></a><b></b><c></c>', ['a', 'c']), '<b></b>');
-  assert.equal(stripTags('<a></a><b></b><c></c>', 'a,c'), '<b></b>');
+  assert.equal(stripTags('<a></a><b></b><c></c>', ['a','c']), '<b></b>');
 });
