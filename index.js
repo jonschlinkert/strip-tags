@@ -20,7 +20,7 @@ module.exports = function (str, tags) {
   var len = tags.length;
 
   while (len--) {
-    var $ = cheerio.load($.html().replace(new RegExp('(<'+tags[len]+'>).*?(<\/'+tags[len]+'>)', 'g'), ''));
+    var $ = cheerio.load($.html().replace(new RegExp('(<'+tags[len]+'.*?>).*?(<\/'+tags[len]+'>)', 'g'), ''));
   }
   return $.html();
 };
